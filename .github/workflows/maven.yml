@@ -24,3 +24,6 @@ jobs:
         
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+
+    - name: Build Docker
+      run: docker build -t test .
